@@ -1,6 +1,6 @@
 import './App.css';
 import countryList from "./countries.json";
-import React, {useState} from "react";
+import React from "react";
 
 import NavBar from "./components/Navbar";
 import CountriesList from "./components/CountriesList"
@@ -10,8 +10,6 @@ import { BrowserRouter, Route } from 'react-router-dom';
 
 
 function App() {
-
-  const [countries, updateCountries] = useState(countryList)
 
   const countryListCopy = [...countryList];
 
